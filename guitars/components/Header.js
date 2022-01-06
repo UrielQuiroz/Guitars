@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from '../styles/Header.module.css';
 
 const Header = () => {
@@ -6,9 +7,9 @@ const Header = () => {
         <header className={styles.header}>
             <div className='contenedor'>
 
-                <div>
-                    
-                </div>
+                <Link href="/">
+                    <Image width={400} height={100} src="/img/logo.svg" />
+                </Link>
 
                 <nav>
                     <Link href="/">Inicio</Link>
